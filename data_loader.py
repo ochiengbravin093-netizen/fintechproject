@@ -9,6 +9,7 @@ def data_store():
     return saf_data
 
 
+
 @st.cache_data(ttl=90)
 def calc(saf_data):
     saf_data = saf_data.dropna(subset="transaction_id")
